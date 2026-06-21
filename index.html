@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inner Peace - Centru de Yoga</title>
+    <meta name="description"
+        content="Centru de Yoga Inner Peace în Cahul. Cursuri de Hatha, Vinyasa, Yin și Meditație pentru toate nivelurile. Încearcă o clasă gratuită!" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo1.svg" class="navbar-logo" alt="Inner Peace Yoga Logo" />
+                    <span class="brand-text">Inner Peace</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">Cursuri</a></li>
+                        <li class="nav-item"><a class="nav-link" href="instructors.html">Instructori</a></li>
+                        <li class="nav-item"><a class="nav-link" href="schedule.html">Orar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="./img/hero/hero.png" class="hero-bg-img" alt="Pacea interioară prin yoga - fundal Inner Peace" />
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="hero-badge">Centru de Yoga din Cahul, Moldova</p>
+                    <h1>Găsește <em>pacea</em> interioară prin yoga</h1>
+                    <p class="hero-description">
+                        Explorează starea de bine prin practici autentice de yoga, meditație și mindfulness.
+                        Orice nivel, orice vârstă — fiecare respirație contează.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn-hero-primary">
+                            Încearcă o clasă gratuită
+                        </a>
+                        <a href="courses.html" class="btn-hero-secondary">
+                            Descoperă cursurile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="yoga-types" id="yoga-types">
+        <div class="container">
+            <h2 class="section-title text-center">Tipuri de Yoga</h2>
+            <p class="section-subtitle text-center mx-auto">Alege stilul care ți se potrivește cel mai bine</p>
+            <div class="row g-4 mt-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="yoga-card">
+                        <div class="yoga-card-img-wrap">
+                            <img src="./img/courses/c1.jpg" class="yoga-card-img"
+                                alt="Hatha Yoga - posturi de bază pentru începători" />
+                        </div>
+                        <div class="yoga-card-body">
+                            <span class="yoga-card-tag">Începător</span>
+                            <h3>Hatha Yoga</h3>
+                            <p>Posturi de bază și respirație conștientă pentru începători.</p>
+                            <a href="courses.html" class="yoga-card-link">Descoperă</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="yoga-card">
+                        <div class="yoga-card-img-wrap">
+                            <img src="./img/courses/c2.jpg" class="yoga-card-img"
+                                alt="Vinyasa Yoga - flux dinamic de mișcări" />
+                        </div>
+                        <div class="yoga-card-body">
+                            <span class="yoga-card-tag">Intermediar</span>
+                            <h3>Vinyasa Yoga</h3>
+                            <p>Flux dinamic de mișcări sincronizate cu respirația.</p>
+                            <a href="courses.html" class="yoga-card-link">Descoperă</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="yoga-card">
+                        <div class="yoga-card-img-wrap">
+                            <img src="./img/courses/c3.jpg" class="yoga-card-img"
+                                alt="Yin Yoga - posturi pasive pentru relaxare profundă" />
+                        </div>
+                        <div class="yoga-card-body">
+                            <span class="yoga-card-tag">Începător</span>
+                            <h3>Yin Yoga</h3>
+                            <p>Posturi pasive, ținute mult timp pentru relaxare profundă.</p>
+                            <a href="courses.html" class="yoga-card-link">Descoperă</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="yoga-card">
+                        <div class="yoga-card-img-wrap">
+                            <img src="./img/courses/c4.jpg" class="yoga-card-img"
+                                alt="Meditație Ghidată - tehnici de mindfulness" />
+                        </div>
+                        <div class="yoga-card-body">
+                            <span class="yoga-card-tag">Începător</span>
+                            <h3>Meditație Ghidată</h3>
+                            <p>Tehnici de mindfulness pentru liniște interioară.</p>
+                            <a href="courses.html" class="yoga-card-link">Descoperă</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-section" id="why-inner-peace">
+        <div class="container">
+            <h2 class="section-title text-center">De ce Inner Peace?</h2>
+            <p class="section-subtitle text-center mx-auto">Motivile pentru care vei iubi să practici alături de noi</p>
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-8">
+                    <div class="benefit-list text-center">
+                        <div class="benefit-item">Instructori Experți — profesioniști certificați cu ani de experiență în diverse stiluri de yoga.</div>
+                        <div class="benefit-item">Ambient Zen — un spațiu curat, primitor și plin de energie pozitivă pentru practica ta.</div>
+                        <div class="benefit-item">Program Flexibil — cursuri dimineața, la prânz și seara, 7 zile din 7 pentru confortul tău.</div>
+                        <div class="benefit-item">Comunitate Unică — alătură-te unei comunități pasionate de wellness și dezvoltare personală.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="counter-section" id="counter">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3">
+                    <div class="counter-item">
+                        <div class="counter-num">
+                            <span class="counter" data-target="1200">0</span><span class="plus">+</span>
+                        </div>
+                        <p class="counter-label">Practicanți</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="counter-item">
+                        <div class="counter-num">
+                            <span class="counter" data-target="25">0</span>
+                        </div>
+                        <p class="counter-label">Instructori</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="counter-item">
+                        <div class="counter-num">
+                            <span class="counter" data-target="35">0</span><span class="plus">+</span>
+                        </div>
+                        <p class="counter-label">Clase / Săptămână</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="counter-item">
+                        <div class="counter-num">
+                            <span class="counter" data-target="8">0</span><span class="plus">+</span>
+                        </div>
+                        <p class="counter-label">Ani de experiență</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <h2 class="section-title text-center">Testimoniale</h2>
+            <p class="section-subtitle text-center mx-auto">Descoperă ce spun cei care au ales Inner Peace</p>
+
+            <div class="testimonials-slider mt-4">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <img src="./img/gallery/t1.jpg" class="testimonial-avatar"
+                                    alt="Andreea M. - practicant Inner Peace" />
+                                <div>
+                                    <p class="testimonial-author-name">Andreea M.</p>
+                                    <p class="testimonial-author-role">Practicant de 2 ani</p>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">Inner Peace m-a ajutat să găsesc echilibrul între muncă și viața
+                                personală. Instructorii sunt minunați, iar atmosfera este deosebită. Recomand cu
+                                căldură!</p>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <img src="./img/gallery/t2.jpg" class="testimonial-avatar"
+                                    alt="Mihai R. - practicant Inner Peace" />
+                                <div>
+                                    <p class="testimonial-author-name">Mihai R.</p>
+                                    <p class="testimonial-author-role">Practicant de 1 an</p>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">De la primul curs, am simțit o transformare pozitivă. Meditația
+                                ghidată m-a ajutat să îmi găsesc liniștea interioară. Cel mai bun cadou pe care mi l-am
+                                făcut.</p>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <img src="./img/gallery/t3.jpg" class="testimonial-avatar"
+                                    alt="Elena C. - practicant Inner Peace" />
+                                <div>
+                                    <p class="testimonial-author-name">Elena C.</p>
+                                    <p class="testimonial-author-role">Practicant de 3 ani</p>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">Inner Peace este mai mult decât un centru de yoga. Este o
+                                comunitate care te susține și te inspiră să fii cea mai bună versiune a ta. Vin cu drag
+                                de fiecare dată!</p>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevSlide" aria-label="Testimonial anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-dots" id="sliderDots">
+                        <span class="slider-dot active" data-index="0"></span>
+                        <span class="slider-dot" data-index="1"></span>
+                        <span class="slider-dot" data-index="2"></span>
+                    </div>
+                    <button class="slider-btn" id="nextSlide" aria-label="Testimonial următor">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="./img/logo2.svg" class="footer-logo-img" alt="Inner Peace Yoga Logo" />
+                    <p class="footer-slogan">Inner Peace - Centru de Yoga</p>
+                    <p class="footer-description">Un spațiu dedicat armoniei interioare, bunăstării fizice și explorării practicilor autentice de yoga.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h5>PAGINI</h5>
+                        <ul>
+                            <li><a href="index.html">Acasă</a></li>
+                            <li><a href="courses.html">Cursuri</a></li>
+                            <li><a href="instructors.html">Instructori</a></li>
+                            <li><a href="schedule.html">Orar</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5>PRACTICI</h5>
+                        <ul>
+                            <li><a href="courses.html">Hatha Yoga</a></li>
+                            <li><a href="courses.html">Vinyasa Yoga</a></li>
+                            <li><a href="courses.html">Yin Yoga</a></li>
+                            <li><a href="courses.html">Meditație ghidată</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5>CONTACT</h5>
+                        <ul class="footer-contact-list">
+                            <li><i class="fas fa-map-marker-alt"></i> Str. Păcii 14, Cahul</li>
+                            <li><i class="fas fa-phone"></i> +373 299 12 345</li>
+                            <li><i class="fas fa-envelope"></i> contact@innerpeace.md</li>
+                            <li><i class="fas fa-clock"></i> Lun-Dum: 07:00 - 21:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Inner Peace - Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Înapoi sus">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js" defer></script>
+</body>
+
+</html>

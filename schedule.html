@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inner Peace - Orar săptămânal</title>
+    <meta name="description" content="Vezi orarul complet al cursurilor de yoga la Inner Peace. Alege ziua și tipul de curs preferat." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo1.svg" class="navbar-logo" alt="Inner Peace Yoga Logo" />
+                    <span class="brand-text">Inner Peace</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">Cursuri</a></li>
+                        <li class="nav-item"><a class="nav-link" href="instructors.html">Instructori</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="schedule.html">Orar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="schedule-section py-5 mt-4">
+            <div class="container">
+                <h1 class="section-title text-center">Orar Săptămânal</h1>
+                <p class="section-subtitle text-center mx-auto">Alege ziua și tipul de curs preferat</p>
+
+                <div class="row mb-4">
+                    <div class="col-md-6 mx-auto">
+                        <div class="d-flex gap-2 flex-wrap justify-content-center">
+                            <input type="text" id="scheduleFilter" class="schedule-filter-input" placeholder="Filtrează după instructor sau tip yoga..." />
+                            <button id="clearFilter" class="schedule-filter-clear">Șterge filtru</button>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="nav nav-tabs justify-content-center schedule-tabs" id="scheduleTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="schedule-tab active" data-bs-toggle="tab" data-bs-target="#luni" type="button" role="tab">Luni</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="schedule-tab" data-bs-toggle="tab" data-bs-target="#marti" type="button" role="tab">Marți</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="schedule-tab" data-bs-toggle="tab" data-bs-target="#miercuri" type="button" role="tab">Miercuri</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="schedule-tab" data-bs-toggle="tab" data-bs-target="#joi" type="button" role="tab">Joi</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="schedule-tab" data-bs-toggle="tab" data-bs-target="#vineri" type="button" role="tab">Vineri</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="schedule-tab" data-bs-toggle="tab" data-bs-target="#sambata" type="button" role="tab">Sâmbătă</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="schedule-tab" data-bs-toggle="tab" data-bs-target="#duminica" type="button" role="tab">Duminică</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content mt-4">
+                    <div class="tab-pane fade show active" id="luni" role="tabpanel">
+                        <div class="table-responsive">
+                            <table class="schedule-table">
+                                <thead>
+                                    <tr>
+                                        <th>Ora</th>
+                                        <th>Curs</th>
+                                        <th>Nivel</th>
+                                        <th>Instructor</th>
+                                        <th>Locuri disponibile</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>08:00 - 09:00</td>
+                                        <td>Hatha Yoga</td>
+                                        <td><span class="schedule-badge beginner">Începător</span></td>
+                                        <td>Ana Popescu</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:00 - 11:15</td>
+                                        <td>Vinyasa Yoga</td>
+                                        <td><span class="schedule-badge intermediate">Intermediar</span></td>
+                                        <td>Mihai Ionescu</td>
+                                        <td><span class="schedule-badge limited">2 locuri</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>12:00 - 13:00</td>
+                                        <td>Yin Yoga</td>
+                                        <td><span class="schedule-badge beginner">Începător</span></td>
+                                        <td>Andreea Marin</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>18:00 - 18:45</td>
+                                        <td>Meditație Ghidată</td>
+                                        <td><span class="schedule-badge beginner">Începător</span></td>
+                                        <td>Elena Voicu</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>19:30 - 20:30</td>
+                                        <td>Kundalini Yoga</td>
+                                        <td><span class="schedule-badge intermediate">Intermediar</span></td>
+                                        <td>Ana Popescu</td>
+                                        <td><span class="schedule-badge limited">5 locuri</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="marti" role="tabpanel">
+                        <div class="table-responsive">
+                            <table class="schedule-table">
+                                <thead>
+                                    <tr><th>Ora</th><th>Curs</th><th>Nivel</th><th>Instructor</th><th>Locuri disponibile</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>07:30 - 08:45</td>
+                                        <td>Power Yoga</td>
+                                        <td><span class="schedule-badge advanced">Avansat</span></td>
+                                        <td>Mihai Ionescu</td>
+                                        <td><span class="schedule-badge limited">3 locuri</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>09:30 - 10:30</td>
+                                        <td>Hatha Yoga</td>
+                                        <td><span class="schedule-badge beginner">Începător</span></td>
+                                        <td>Ana Popescu</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>17:00 - 18:15</td>
+                                        <td>Ashtanga Yoga</td>
+                                        <td><span class="schedule-badge advanced">Avansat</span></td>
+                                        <td>Cristian Vasile</td>
+                                        <td><span class="schedule-badge limited">1 loc</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>19:00 - 19:45</td>
+                                        <td>Meditație Ghidată</td>
+                                        <td><span class="schedule-badge beginner">Începător</span></td>
+                                        <td>Elena Voicu</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="miercuri" role="tabpanel">
+                        <div class="table-responsive">
+                            <table class="schedule-table">
+                                <thead>
+                                    <tr><th>Ora</th><th>Curs</th><th>Nivel</th><th>Instructor</th><th>Locuri disponibile</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>08:00 - 09:00</td>
+                                        <td>Yin Yoga</td>
+                                        <td><span class="schedule-badge beginner">Începător</span></td>
+                                        <td>Andreea Marin</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:30 - 11:45</td>
+                                        <td>Vinyasa Yoga</td>
+                                        <td><span class="schedule-badge intermediate">Intermediar</span></td>
+                                        <td>Mihai Ionescu</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>12:30 - 13:30</td>
+                                        <td>Kundalini Yoga</td>
+                                        <td><span class="schedule-badge intermediate">Intermediar</span></td>
+                                        <td>Ana Popescu</td>
+                                        <td><span class="schedule-badge limited">4 locuri</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>19:00 - 19:45</td>
+                                        <td>Meditație Ghidată</td>
+                                        <td><span class="schedule-badge beginner">Începător</span></td>
+                                        <td>Elena Voicu</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="joi" role="tabpanel">
+                        <div class="table-responsive">
+                            <table class="schedule-table">
+                                <thead>
+                                    <tr><th>Ora</th><th>Curs</th><th>Nivel</th><th>Instructor</th><th>Locuri disponibile</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>08:00 - 09:15</td>
+                                        <td>Ashtanga Yoga</td>
+                                        <td><span class="schedule-badge advanced">Avansat</span></td>
+                                        <td>Cristian Vasile</td>
+                                        <td><span class="schedule-badge limited">2 locuri</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:00 - 11:00</td>
+                                        <td>Hatha Yoga</td>
+                                        <td><span class="schedule-badge beginner">Începător</span></td>
+                                        <td>Ana Popescu</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>17:30 - 18:30</td>
+                                        <td>Restorative Yoga</td>
+                                        <td><span class="schedule-badge intermediate">Intermediar</span></td>
+                                        <td>Andreea Marin</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>19:30 - 20:30</td>
+                                        <td>Iyengar Yoga</td>
+                                        <td><span class="schedule-badge intermediate">Intermediar</span></td>
+                                        <td>Alexandru Ștefan</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="vineri" role="tabpanel">
+                        <div class="table-responsive">
+                            <table class="schedule-table">
+                                <thead>
+                                    <tr><th>Ora</th><th>Curs</th><th>Nivel</th><th>Instructor</th><th>Locuri disponibile</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>07:30 - 08:45</td>
+                                        <td>Power Yoga</td>
+                                        <td><span class="schedule-badge advanced">Avansat</span></td>
+                                        <td>Mihai Ionescu</td>
+                                        <td><span class="schedule-badge limited">1 loc</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>09:30 - 10:30</td>
+                                        <td>Yin Yoga</td>
+                                        <td><span class="schedule-badge beginner">Începător</span></td>
+                                        <td>Andreea Marin</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>12:00 - 13:15</td>
+                                        <td>Vinyasa Yoga</td>
+                                        <td><span class="schedule-badge intermediate">Intermediar</span></td>
+                                        <td>Mihai Ionescu</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>18:00 - 18:45</td>
+                                        <td>Meditație Ghidată</td>
+                                        <td><span class="schedule-badge beginner">Începător</span></td>
+                                        <td>Elena Voicu</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="sambata" role="tabpanel">
+                        <div class="table-responsive">
+                            <table class="schedule-table">
+                                <thead>
+                                    <tr><th>Ora</th><th>Curs</th><th>Nivel</th><th>Instructor</th><th>Locuri disponibile</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>09:00 - 10:15</td>
+                                        <td>Vinyasa Yoga</td>
+                                        <td><span class="schedule-badge intermediate">Intermediar</span></td>
+                                        <td>Mihai Ionescu</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>11:00 - 12:00</td>
+                                        <td>Family Yoga</td>
+                                        <td><span class="schedule-badge beginner">Începător</span></td>
+                                        <td>Ioana Rădulescu</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>13:00 - 14:00</td>
+                                        <td>Yoga Nidra</td>
+                                        <td><span class="schedule-badge beginner">Începător</span></td>
+                                        <td>Maria Dumitrescu</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="duminica" role="tabpanel">
+                        <div class="table-responsive">
+                            <table class="schedule-table">
+                                <thead>
+                                    <tr><th>Ora</th><th>Curs</th><th>Nivel</th><th>Instructor</th><th>Locuri disponibile</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>10:00 - 11:00</td>
+                                        <td>Yin Yoga</td>
+                                        <td><span class="schedule-badge beginner">Începător</span></td>
+                                        <td>Andreea Marin</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>12:00 - 13:00</td>
+                                        <td>Meditație Ghidată</td>
+                                        <td><span class="schedule-badge beginner">Începător</span></td>
+                                        <td>Elena Voicu</td>
+                                        <td><span class="schedule-badge available">disponibile</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>15:00 - 16:30</td>
+                                        <td>Workshop Săptămânal</td>
+                                        <td><span class="schedule-badge all">Toate nivelurile</span></td>
+                                        <td>Toți instructorii</td>
+                                        <td><span class="schedule-badge limited">8 locuri</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="./img/logo2.svg" class="footer-logo-img" alt="Inner Peace Yoga Logo" />
+                    <p class="footer-slogan">Inner Peace - Centru de Yoga</p>
+                    <p class="footer-description">Un spațiu dedicat armoniei interioare, bunăstării fizice și explorării practicilor autentice de yoga.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h5>PAGINI</h5>
+                        <ul>
+                            <li><a href="index.html">Acasă</a></li>
+                            <li><a href="courses.html">Cursuri</a></li>
+                            <li><a href="instructors.html">Instructori</a></li>
+                            <li><a href="schedule.html">Orar</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5>PRACTICI</h5>
+                        <ul>
+                            <li><a href="courses.html">Hatha Yoga</a></li>
+                            <li><a href="courses.html">Vinyasa Yoga</a></li>
+                            <li><a href="courses.html">Yin Yoga</a></li>
+                            <li><a href="courses.html">Meditație ghidată</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5>CONTACT</h5>
+                        <ul class="footer-contact-list">
+                            <li><i class="fas fa-map-marker-alt"></i> Str. Păcii 14, Cahul</li>
+                            <li><i class="fas fa-phone"></i> +373 299 12 345</li>
+                            <li><i class="fas fa-envelope"></i> contact@innerpeace.md</li>
+                            <li><i class="fas fa-clock"></i> Lun-Dum: 07:00 - 21:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Inner Peace - Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Înapoi sus">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js" defer></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterInput = document.getElementById('scheduleFilter');
+            const clearBtn = document.getElementById('clearFilter');
+
+            if (filterInput) {
+                filterInput.addEventListener('input', function () {
+                    const searchTerm = this.value.toLowerCase().trim();
+                    const tables = document.querySelectorAll('.schedule-table');
+
+                    tables.forEach(table => {
+                        const rows = table.querySelectorAll('tbody tr');
+                        rows.forEach(row => {
+                            const text = row.textContent.toLowerCase();
+                            if (searchTerm === '' || text.includes(searchTerm)) {
+                                row.style.display = '';
+                            } else {
+                                row.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+
+                if (clearBtn) {
+                    clearBtn.addEventListener('click', function () {
+                        filterInput.value = '';
+                        filterInput.dispatchEvent(new Event('input'));
+                    });
+                }
+            }
+
+            console.log('Schedule page loaded successfully!');
+        });
+    </script>
+</body>
+</html>

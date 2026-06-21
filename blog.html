@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inner Peace - Blog & Meditație</title>
+    <meta name="description" content="Articole despre yoga, meditație și wellness. Timer interactiv pentru meditație ghidată." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo1.svg" class="navbar-logo" alt="Inner Peace Yoga Logo" />
+                    <span class="brand-text">Inner Peace</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">Cursuri</a></li>
+                        <li class="nav-item"><a class="nav-link" href="instructors.html">Instructori</a></li>
+                        <li class="nav-item"><a class="nav-link" href="schedule.html">Orar</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-section py-5 mt-4">
+            <div class="container">
+                <h1 class="section-title text-center">Blog & Meditație</h1>
+                <p class="section-subtitle text-center mx-auto">Articole inspirate și timer pentru meditație ghidată</p>
+
+                <div class="row g-4">
+                    <div class="col-lg-8">
+                        <div class="d-flex gap-2 flex-wrap mb-4">
+                            <button class="filter-btn active" data-category="all">Toate</button>
+                            <button class="filter-btn" data-category="meditatie">Meditație</button>
+                            <button class="filter-btn" data-category="wellness">Wellness</button>
+                            <button class="filter-btn" data-category="yoga">Yoga</button>
+                        </div>
+
+                        <div class="blog-card article-item" data-category="meditatie">
+                            <div class="blog-card-img-wrap">
+                                <img src="./img/blog/b1.jpg" class="blog-card-img" alt="Sfaturi pentru meditația zilnică" />
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-tag meditatie">Meditație</span>
+                                <h3>5 Sfaturi pentru o Meditație Zilnică</h3>
+                                <p class="blog-date">Publicat: 15 martie 2026</p>
+                                <p>Începe-ți ziua cu 5 minute de liniște. Găsește-ți un loc confortabil, respiră adânc și observă-ți gândurile fără a le judeca. Meditația zilnică reduce stresul, îmbunătățește concentrarea și aduce claritate mentală.</p>
+                                <a href="#" class="blog-read-more">Citește mai mult →</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-card article-item" data-category="wellness">
+                            <div class="blog-card-img-wrap">
+                                <img src="./img/blog/b2.jpg" class="blog-card-img" alt="Cum să integrezi yoga în rutina zilnică" />
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-tag wellness">Wellness</span>
+                                <h3>Cum să Integrezi Yoga în Rutina Zilnică</h3>
+                                <p class="blog-date">Publicat: 10 martie 2026</p>
+                                <p>Chiar și 10 minute de yoga pe zi pot transforma starea ta de bine. Începe cu câteva posturi simple și respiră conștient. Descoperă cum poți să îți creezi un ritual matinal care să îți aducă echilibru.</p>
+                                <a href="#" class="blog-read-more">Citește mai mult →</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-card article-item" data-category="yoga">
+                            <div class="blog-card-img-wrap">
+                                <img src="./img/blog/b3.jpg" class="blog-card-img" alt="Cele mai bune posturi pentru începători" />
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-tag yoga">Yoga</span>
+                                <h3>Cele mai bune posturi pentru începători</h3>
+                                <p class="blog-date">Publicat: 5 martie 2026</p>
+                                <p>Posturile de bază precum Copilul, Câinele cu fața în jos și Războinicul sunt esențiale pentru orice începător. Acestea construiesc forță, flexibilitate și încredere în practica ta.</p>
+                                <a href="#" class="blog-read-more">Citește mai mult →</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-card article-item" data-category="meditatie">
+                            <div class="blog-card-img-wrap">
+                                <img src="./img/blog/b4.jpg" class="blog-card-img" alt="Mindfulness în viața de zi cu zi" />
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-tag meditatie">Meditație</span>
+                                <h3>Mindfulness în viața de zi cu zi</h3>
+                                <p class="blog-date">Publicat: 28 februarie 2026</p>
+                                <p>Mindfulness nu înseamnă doar meditație pe pernă. Învață cum să fii prezent în fiecare moment: când mănânci, mergi sau asculți pe cineva. Trăiește fiecare clipă cu intenție.</p>
+                                <a href="#" class="blog-read-more">Citește mai mult →</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-card article-item" data-category="yoga">
+                            <div class="blog-card-img-wrap">
+                                <img src="./img/blog/b5.jpg" class="blog-card-img" alt="Tehnici de respirație în yoga" />
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-tag yoga">Yoga</span>
+                                <h3>Tehnici de Respirație (Pranayama)</h3>
+                                <p class="blog-date">Publicat: 20 februarie 2026</p>
+                                <p>Respirația este sufletul yoga. Învață tehnici precum Ujjayi, Kapalabhati și Nadi Shodhana pentru a-ți calma mintea și a-ți energiza corpul.</p>
+                                <a href="#" class="blog-read-more">Citește mai mult →</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-card article-item" data-category="wellness">
+                            <div class="blog-card-img-wrap">
+                                <img src="./img/blog/b6.jpg" class="blog-card-img" alt="Nutriție pentru yoghini" />
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-tag wellness">Wellness</span>
+                                <h3>Nutriție pentru Yoghini: Ce să mănânci pentru energie</h3>
+                                <p class="blog-date">Publicat: 15 februarie 2026</p>
+                                <p>Alimentația joacă un rol crucial în practica yoga. Descoperă alimentele care îți susțin energia, flexibilitatea și claritatea mentală. O dietă bazată pe plante și alimente integrale este cheia.</p>
+                                <a href="#" class="blog-read-more">Citește mai mult →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="blog-sidebar">
+                            <div class="timer-card">
+                                <h4 class="timer-title">Timer Meditație</h4>
+                                <div id="timerDisplay" class="timer-display">05:00</div>
+                                <div class="timer-controls">
+                                    <button id="timerStart" class="timer-btn timer-start">Start</button>
+                                    <button id="timerPause" class="timer-btn timer-pause">Pauză</button>
+                                    <button id="timerReset" class="timer-btn timer-reset">Reset</button>
+                                </div>
+                                <p class="timer-hint">Setează-ți intenția și respiră adânc.</p>
+                            </div>
+
+                            <div class="resources-card">
+                                <h5 class="resources-title">Resurse utile</h5>
+                                <ul class="resources-list">
+                                    <li><a href="#"><i class="fas fa-book"></i> Ghid de meditație</a></li>
+                                    <li><a href="#"><i class="fas fa-music"></i> Muzică relaxantă</a></li>
+                                    <li><a href="#"><i class="fas fa-person-walking"></i> Posturi zilnice</a></li>
+                                    <li><a href="#"><i class="fas fa-heart"></i> Articole wellness</a></li>
+                                </ul>
+                                <div class="resources-tags">
+                                    <span class="res-tag meditatie">Meditație</span>
+                                    <span class="res-tag wellness">Wellness</span>
+                                    <span class="res-tag yoga">Yoga</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="./img/logo2.svg" class="footer-logo-img" alt="Inner Peace Yoga Logo" />
+                    <p class="footer-slogan">Inner Peace - Centru de Yoga</p>
+                    <p class="footer-description">Un spațiu dedicat armoniei interioare, bunăstării fizice și explorării practicilor autentice de yoga.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h5>PAGINI</h5>
+                        <ul>
+                            <li><a href="index.html">Acasă</a></li>
+                            <li><a href="courses.html">Cursuri</a></li>
+                            <li><a href="instructors.html">Instructori</a></li>
+                            <li><a href="schedule.html">Orar</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5>PRACTICI</h5>
+                        <ul>
+                            <li><a href="courses.html">Hatha Yoga</a></li>
+                            <li><a href="courses.html">Vinyasa Yoga</a></li>
+                            <li><a href="courses.html">Yin Yoga</a></li>
+                            <li><a href="courses.html">Meditație ghidată</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5>CONTACT</h5>
+                        <ul class="footer-contact-list">
+                            <li><i class="fas fa-map-marker-alt"></i> Str. Păcii 14, Cahul</li>
+                            <li><i class="fas fa-phone"></i> +373 299 12 345</li>
+                            <li><i class="fas fa-envelope"></i> contact@innerpeace.md</li>
+                            <li><i class="fas fa-clock"></i> Lun-Dum: 07:00 – 21:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Inner Peace - Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Înapoi sus">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/timer.js" defer></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const articleItems = document.querySelectorAll('.article-item');
+
+            if (filterButtons.length > 0 && articleItems.length > 0) {
+                filterButtons.forEach(btn => {
+                    btn.addEventListener('click', function () {
+                        filterButtons.forEach(b => b.classList.remove('active'));
+                        this.classList.add('active');
+
+                        const category = this.getAttribute('data-category');
+
+                        articleItems.forEach(item => {
+                            if (category === 'all' || item.getAttribute('data-category') === category) {
+                                item.style.display = 'block';
+                                item.style.animation = 'fadeInUp 0.4s ease forwards';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            }
+
+            console.log('Blog page loaded successfully!');
+        });
+    </script>
+</body>
+</html>

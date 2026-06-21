@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inner Peace - Cursuri de Yoga</title>
+    <meta name="description" content="Descoperă cursurile noastre de yoga: Hatha, Vinyasa, Yin, Ashtanga, Kundalini, Meditație, Power, Restorative și Jivamukti. Începător, intermediar sau avansat." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo1.svg" class="navbar-logo" alt="Inner Peace Yoga Logo" />
+                    <span class="brand-text">Inner Peace</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="courses.html">Cursuri</a></li>
+                        <li class="nav-item"><a class="nav-link" href="instructors.html">Instructori</a></li>
+                        <li class="nav-item"><a class="nav-link" href="schedule.html">Orar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="courses-section py-5 mt-4">
+            <div class="container">
+                <h1 class="section-title text-center">Cursurile Noastre</h1>
+                <p class="section-subtitle text-center mx-auto">Alege-ți stilul și nivelul potrivit</p>
+
+                <div class="row g-4" id="coursesGrid">
+                    <div class="col-md-6 col-lg-4 course-item" data-level="beginner">
+                        <div class="yoga-card h-100">
+                            <div class="yoga-card-img-wrap">
+                                <img src="./img/courses/c1.jpg" class="yoga-card-img" alt="Hatha Yoga" />
+                            </div>
+                            <div class="yoga-card-body">
+                                <span class="yoga-card-tag">Începător</span>
+                                <h3>Hatha Yoga</h3>
+                                <p><strong>Durată:</strong> 60 min</p>
+                                <p><strong>Instructor:</strong> Ana Popescu</p>
+                                <p><strong>Preț:</strong> 150 lei / clasă</p>
+                                <button class="course-details-btn" data-bs-toggle="collapse" data-bs-target="#details1">
+                                    Detalii <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse mt-2" id="details1">
+                                    <div class="course-details">
+                                        <p>Posturi de bază, respirație conștientă și relaxare. Perfect pentru începători.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 course-item" data-level="intermediate">
+                        <div class="yoga-card h-100">
+                            <div class="yoga-card-img-wrap">
+                                <img src="./img/courses/c2.jpg" class="yoga-card-img" alt="Vinyasa Yoga" />
+                            </div>
+                            <div class="yoga-card-body">
+                                <span class="yoga-card-tag">Intermediar</span>
+                                <h3>Vinyasa Yoga</h3>
+                                <p><strong>Durată:</strong> 75 min</p>
+                                <p><strong>Instructor:</strong> Mihai Ionescu</p>
+                                <p><strong>Preț:</strong> 180 lei / clasă</p>
+                                <button class="course-details-btn" data-bs-toggle="collapse" data-bs-target="#details2">
+                                    Detalii <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse mt-2" id="details2">
+                                    <div class="course-details">
+                                        <p>Flux dinamic de mișcări sincronizate cu respirația. Crește flexibilitatea și forța.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 course-item" data-level="beginner">
+                        <div class="yoga-card h-100">
+                            <div class="yoga-card-img-wrap">
+                                <img src="./img/courses/c3.jpg" class="yoga-card-img" alt="Yin Yoga" />
+                            </div>
+                            <div class="yoga-card-body">
+                                <span class="yoga-card-tag">Începător</span>
+                                <h3>Yin Yoga</h3>
+                                <p><strong>Durată:</strong> 60 min</p>
+                                <p><strong>Instructor:</strong> Andreea Marin</p>
+                                <p><strong>Preț:</strong> 160 lei / clasă</p>
+                                <button class="course-details-btn" data-bs-toggle="collapse" data-bs-target="#details3">
+                                    Detalii <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse mt-2" id="details3">
+                                    <div class="course-details">
+                                        <p>Posturi pasive, ținute 3-5 minute. Relaxare profundă și eliberare de tensiuni.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 course-item" data-level="advanced">
+                        <div class="yoga-card h-100">
+                            <div class="yoga-card-img-wrap">
+                                <img src="./img/courses/c4.jpg" class="yoga-card-img" alt="Ashtanga Yoga" />
+                            </div>
+                            <div class="yoga-card-body">
+                                <span class="yoga-card-tag">Avansat</span>
+                                <h3>Ashtanga Yoga</h3>
+                                <p><strong>Durată:</strong> 90 min</p>
+                                <p><strong>Instructor:</strong> Cristian Vasile</p>
+                                <p><strong>Preț:</strong> 210 lei / clasă</p>
+                                <button class="course-details-btn" data-bs-toggle="collapse" data-bs-target="#details4">
+                                    Detalii <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse mt-2" id="details4">
+                                    <div class="course-details">
+                                        <p>Serie fixă de posturi, practică intensă. Recomandat pentru yoghini experimentați.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 course-item" data-level="intermediate">
+                        <div class="yoga-card h-100">
+                            <div class="yoga-card-img-wrap">
+                                <img src="./img/courses/c5.jpg" class="yoga-card-img" alt="Kundalini Yoga" />
+                            </div>
+                            <div class="yoga-card-body">
+                                <span class="yoga-card-tag">Intermediar</span>
+                                <h3>Kundalini Yoga</h3>
+                                <p><strong>Durată:</strong> 75 min</p>
+                                <p><strong>Instructor:</strong> Ana Popescu</p>
+                                <p><strong>Preț:</strong> 190 lei / clasă</p>
+                                <button class="course-details-btn" data-bs-toggle="collapse" data-bs-target="#details5">
+                                    Detalii <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse mt-2" id="details5">
+                                    <div class="course-details">
+                                        <p>Combinație de posturi, respirație, cântare și meditație. Energizează și vindecă.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 course-item" data-level="beginner">
+                        <div class="yoga-card h-100">
+                            <div class="yoga-card-img-wrap">
+                                <img src="./img/courses/c6.jpg" class="yoga-card-img" alt="Meditație Ghidată" />
+                            </div>
+                            <div class="yoga-card-body">
+                                <span class="yoga-card-tag">Începător</span>
+                                <h3>Meditație Ghidată</h3>
+                                <p><strong>Durată:</strong> 45 min</p>
+                                <p><strong>Instructor:</strong> Elena Voicu</p>
+                                <p><strong>Preț:</strong> 130 lei / clasă</p>
+                                <button class="course-details-btn" data-bs-toggle="collapse" data-bs-target="#details6">
+                                    Detalii <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse mt-2" id="details6">
+                                    <div class="course-details">
+                                        <p>Tehnici de mindfulness și respirație pentru liniște interioară și claritate mentală.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 course-item" data-level="advanced">
+                        <div class="yoga-card h-100">
+                            <div class="yoga-card-img-wrap">
+                                <img src="./img/courses/c7.jpg" class="yoga-card-img" alt="Power Yoga" />
+                            </div>
+                            <div class="yoga-card-body">
+                                <span class="yoga-card-tag">Avansat</span>
+                                <h3>Power Yoga</h3>
+                                <p><strong>Durată:</strong> 80 min</p>
+                                <p><strong>Instructor:</strong> Mihai Ionescu</p>
+                                <p><strong>Preț:</strong> 220 lei / clasă</p>
+                                <button class="course-details-btn" data-bs-toggle="collapse" data-bs-target="#details7">
+                                    Detalii <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse mt-2" id="details7">
+                                    <div class="course-details">
+                                        <p>Antrenament intens de forță și flexibilitate. Pentru cei care caută provocare.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 course-item" data-level="intermediate">
+                        <div class="yoga-card h-100">
+                            <div class="yoga-card-img-wrap">
+                                <img src="./img/courses/c8.jpg" class="yoga-card-img" alt="Restorative Yoga" />
+                            </div>
+                            <div class="yoga-card-body">
+                                <span class="yoga-card-tag">Intermediar</span>
+                                <h3>Restorative Yoga</h3>
+                                <p><strong>Durată:</strong> 60 min</p>
+                                <p><strong>Instructor:</strong> Andreea Marin</p>
+                                <p><strong>Preț:</strong> 170 lei / clasă</p>
+                                <button class="course-details-btn" data-bs-toggle="collapse" data-bs-target="#details8">
+                                    Detalii <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse mt-2" id="details8">
+                                    <div class="course-details">
+                                        <p>Posturi susținute cu accesorii, pentru relaxare profundă și recuperare.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 course-item" data-level="intermediate">
+                        <div class="yoga-card h-100">
+                            <div class="yoga-card-img-wrap">
+                                <img src="./img/courses/c9.jpg" class="yoga-card-img" alt="Jivamukti Yoga" />
+                            </div>
+                            <div class="yoga-card-body">
+                                <span class="yoga-card-tag">Intermediar</span>
+                                <h3>Jivamukti Yoga</h3>
+                                <p><strong>Durată:</strong> 75 min</p>
+                                <p><strong>Instructor:</strong> Ana Popescu</p>
+                                <p><strong>Preț:</strong> 200 lei / clasă</p>
+                                <button class="course-details-btn" data-bs-toggle="collapse" data-bs-target="#details9">
+                                    Detalii <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse mt-2" id="details9">
+                                    <div class="course-details">
+                                        <p>Stil modern care combină posturile fizice cu filosofia yoga, cântări și meditație.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="./img/logo2.svg" class="footer-logo-img" alt="Inner Peace Yoga Logo" />
+                    <p class="footer-slogan">Inner Peace - Centru de Yoga</p>
+                    <p class="footer-description">Un spațiu dedicat armoniei interioare, bunăstării fizice și explorării practicilor autentice de yoga.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h5>PAGINI</h5>
+                        <ul>
+                            <li><a href="index.html">Acasă</a></li>
+                            <li><a href="courses.html">Cursuri</a></li>
+                            <li><a href="instructors.html">Instructori</a></li>
+                            <li><a href="schedule.html">Orar</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5>PRACTICI</h5>
+                        <ul>
+                            <li><a href="courses.html">Hatha Yoga</a></li>
+                            <li><a href="courses.html">Vinyasa Yoga</a></li>
+                            <li><a href="courses.html">Yin Yoga</a></li>
+                            <li><a href="courses.html">Meditație ghidată</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5>CONTACT</h5>
+                        <ul class="footer-contact-list">
+                            <li><i class="fas fa-map-marker-alt"></i> Str. Păcii 14, Cahul</li>
+                            <li><i class="fas fa-phone"></i> +373 299 12 345</li>
+                            <li><i class="fas fa-envelope"></i> contact@innerpeace.md</li>
+                            <li><i class="fas fa-clock"></i> Lun-Dum: 07:00 - 21:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Inner Peace - Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Înapoi sus">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/courses.js" defer></script>
+    <script src="./js/main.js" defer></script>
+</body>
+</html>
