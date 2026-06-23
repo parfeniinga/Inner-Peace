@@ -1371,6 +1371,10 @@ a {
     text-align: center;
 }
 
+/* Titlurile din footer - PAGINI, PRACTICI, CONTACT - culoare galbenă */
+.footer-column h2,
+.footer-column h3,
+.footer-column h4,
 .footer-column h5 {
     font-family: 'Open Sans', sans-serif;
     font-size: .8rem;
@@ -1813,6 +1817,9 @@ a {
     .footer-description {
         font-size: .8rem;
     }
+    .footer-column h2,
+    .footer-column h3,
+    .footer-column h4,
     .footer-column h5 {
         font-size: .7rem;
     }
