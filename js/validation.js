@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contactForm');
 
     if (form) {
-        loadSavedData();
-
         form.addEventListener('submit', function (e) {
             e.preventDefault();
             let isValid = true;
@@ -39,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 
                 alert('Cererea ta a fost trimisă cu succes! Te așteptăm la Inner Peace.');
                 form.reset();
-                
                 displaySubmissions();
             } else {
                 alert('Te rugăm să completezi corect toate câmpurile obligatorii.');
@@ -67,27 +64,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let submissions = JSON.parse(localStorage.getItem('yogaSubmissions')) || [];
         submissions.push(formData);
+        
         localStorage.setItem('yogaSubmissions', JSON.stringify(submissions));
         
-        console.log('Date salvate în localStorage:', formData);
-        console.log('Total înscrieri:', submissions.length);
-    }
-
-    function loadSavedData() {
-        const submissions = JSON.parse(localStorage.getItem('yogaSubmissions')) || [];
-        if (submissions.length > 0) {
-            const last = submissions[submissions.length - 1];
-        }
+        console.log('Cerere nouă trimisă:', formData);
+        console.log(`Total cereri înregistrate: ${submissions.length}`);
     }
 
     function displaySubmissions() {
         const submissions = JSON.parse(localStorage.getItem('yogaSubmissions')) || [];
-        console.log('TOATE ÎNSCRIERILE');
-        submissions.forEach((sub, index) => {
-            console.log(`#${index + 1}: ${sub.name} - ${sub.email} - ${sub.yogaType} - ${sub.date}`);
-        });
-        console.log(`Total: ${submissions.length} înscrieri`);
+        
+        console.log('LISTA COMPLETĂ A CERERILOR');
+        if (submissions.length === 0) {
+            console.log('Nu există cereri înregistrate.');
+        } else {
+            submissions.forEach((sub, index) => {
+                console.log(`┌─── Cererea #${index + 1} ───`);
+                console.log(`│ Nume:       ${sub.name}`);
+                console.log(`│ Email:      ${sub.email}`);
+                console.log(`│ Telefon:    ${sub.phone}`);
+                console.log(`│ Tip yoga:   ${sub.yogaType || 'Neselectat'}`);
+                console.log(`│ Experiență: ${sub.experience || 'Neselectat'}`);
+                console.log(`│ Mesaj:      ${sub.message || 'Fără mesaj'}`);
+                console.log(`│ Data:       ${sub.date}`);
+                console.log(`└─────────────────────────`);
+            });
+            console.log(`TOTAL CERERI: ${submissions.length}`);
+        }
+        console.log('---------------------------------------------------------');
     }
-
     displaySubmissions();
+    window.showSubmissions = displaySubmissions;
 });
